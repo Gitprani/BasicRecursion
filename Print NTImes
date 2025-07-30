@@ -1,0 +1,29 @@
+public static void main(String[] args) {                            
+		Print("Hello",1);
+	}
+	public static void Print(String greet,int count){
+	    
+	    if(count==5){
+	        return;
+	    }
+	    System.out.println(greet);
+	    Print(greet,count+1);           // or count++; Print(greet,count)
+
+	}
+
+// 'return' inside conditionals
+// 'break' inside loops
+
+
+	public static void main(String[] args) {
+		Print(1);
+	}
+	public static void Print(int n){
+	    
+	    if(n==5){
+	        System.out.println(5);
+	        return;
+	    }
+	    System.out.println(n); 
+	    Print(n+1);    // n++ is fine too
+	}
