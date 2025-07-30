@@ -14,7 +14,7 @@ public static void main(String[] args) {
 // 'return' inside conditionals
 // 'break' inside loops
 
-
+-----------------------------------------------------------------
 	public static void main(String[] args) {
 		Print(1);
 	}
@@ -26,4 +26,19 @@ public static void main(String[] args) {
 	    }
 	    System.out.println(n); 
 	    Print(n+1);    // n++ is fine too
+	}
+
+-----------------------------------------------------------------------------------------------------
+public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		Print(1,n);
+	}
+	public static void Print(int i,int n){
+	    
+	    if(i>n){
+	        return;
+	    }
+	    System.out.println("Pranesh");
+	    Print(i+1,n);
 	}
