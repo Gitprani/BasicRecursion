@@ -20,7 +20,7 @@ public static void main(String[] args) {
 	}
 	public static void Print(int n){
 	    
-	    if(n==5){
+	    if(n==5){                               Time,space Complexity: O(n)
 	        System.out.println(5);
 	        return;
 	    }
@@ -37,7 +37,7 @@ public static void main(String[] args) {
 	public static void Print(int i,int n){
 	    
 	    if(i>n){
-	        return;
+	        return;                    Time,space Complexity: O(n)
 	    }
 	    System.out.println("Pranesh");
 	    Print(i+1,n);
