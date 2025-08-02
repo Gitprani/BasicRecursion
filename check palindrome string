@@ -1,0 +1,9 @@
+public static boolean IsPal(String st,int i){
+	    if(i>=st.length()/2){
+	        return true; // completed check
+	    }
+	    if(st.charAt(i)!=st.charAt(n-i-1)){
+	        return false;
+	    }
+	    return IsPal(st,st.length(),i+1);
+	}
