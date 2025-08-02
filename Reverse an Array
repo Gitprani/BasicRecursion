@@ -1,0 +1,83 @@
+"Swap Function"
+public class Main
+{
+	public static void main(String[] args) {
+	    int arr[]={1,2,3,4,5};
+	    Print(arr);
+		
+	}
+	public static void Print(int[] arr){
+	    int start=0;
+	    int end=arr.length-1;
+	    
+	    while(start<end){
+	        swap(arr, start,end);
+	        start++;
+	        end--;
+	    }
+	    for(int i=0;i<arr.length;i++){
+	        System.out.print(arr[i]+" ");
+	    }
+	}
+	public static void swap(int arr[], int s,int e){
+	    int temp=arr[s];
+	    arr[s]=arr[e];
+	    arr[e]=temp;
+	}
+}
+---------------------------------------------------
+"Recursion with two ref.variables"
+public class Main
+{
+	public static void main(String[] args) {
+	    int arr[]={1,2,3,4,5};
+	    Print(arr,0,arr.length-1);
+		
+		
+	    for(int i=0;i<arr.length;i++){
+	        System.out.print(arr[i]+" ");
+	    }
+	}
+	public static void Print(int[] arr,int s,int e){
+	    
+	    if(s>=e){
+	        return;
+	    }
+	    swap(arr,s,e);
+	    Print(arr,s+1,e-1);
+	    
+	}
+	public static void swap(int arr[], int s,int e){
+	    int temp=arr[s];
+	    arr[s]=arr[e];
+	    arr[e]=temp;
+	}
+}
+----------------------------------------------
+"Recursion with single ref.variable" ("n-i-1" in place of end)
+public class Main
+{
+	public static void main(String[] args) {
+	    int arr[]={1,2,3,4,5};
+	    Print(arr,0);
+		
+		
+	    for(int i=0;i<arr.length;i++){
+	        System.out.print(arr[i]+" ");
+	    }
+	}
+	public static void Print(int[] arr,int i){
+	    
+	    if(i>=arr.length/2){
+	        return;
+	    }
+	    swap(arr,i,arr.length-i-1);
+	    Print(arr,i+1);
+	    
+	}
+	public static void swap(int arr[], int s,int e){
+	    int temp=arr[s];
+	    arr[s]=arr[e];
+	    arr[e]=temp;
+	}
+}
