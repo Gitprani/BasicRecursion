@@ -1,0 +1,44 @@
+"Parametrized Recursion"
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=3;
+	    int sum=0;
+	    Print(0,n,sum);
+		
+	}
+	public static void Print(int i,int n,int sum){
+	    if(i>n){
+	        System.out.print(sum);
+	        return;
+	    }
+	    
+	    Print(i+1,n,sum+i);
+	}
+}
+-------------------------------------------------------
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=4;
+	    int sum=0;
+	    Print(n,sum);
+		
+	}
+	public static void Print(int n,int sum){
+	    if(n<1){
+	        System.out.print(sum);
+	        return;
+	    }
+	    
+	    Print(n-1,sum+n);
+	}
+}
+-------------------------------------------------------------
+"Functional Recursion"
+	public static int Print(int n){
+	    if(n==0){
+	        return 0;
+	    }
+	    return n + Print(n-1);
+	}
