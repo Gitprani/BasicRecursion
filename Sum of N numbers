@@ -17,7 +17,7 @@ public class Main
 	}
 }
 -------------------------------------------------------
-public class Main
+public class Main                                                            Time,Space Complexity = O(N)
 {
 	public static void main(String[] args) {
 	    int n=4;
