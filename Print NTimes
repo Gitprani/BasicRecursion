@@ -25,7 +25,7 @@ public static void main(String[] args) {
 	        return;
 	    }
 	    System.out.println(n); 
-	    Print(n+1);    // n++ is fine too
+	    Print(n+1);  
 	}
 
 -----------------------------------------------------------------------------------------------------
