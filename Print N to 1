@@ -1,0 +1,18 @@
+public static void Print(int i,int n){
+	    if(i>n){
+	        return;
+	    }
+	    Print(i+1,n);                      Time,Sapce Complexity = O(n)
+	    System.out.println(i);
+	}
+
+--------------------------------------------------------------
+"Backtracking Approach"
+
+public static void Print(int i){
+	    if(i<1){
+	        return;
+	    }                                  Time,Sapce Complexity = O(n)
+	    System.out.println(i);
+	    Print(i-1);
+	}
